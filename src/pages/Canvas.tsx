@@ -11,14 +11,6 @@ interface Point {
   y: number;
 }
 
-interface DrawAction {
-  type: 'draw' | 'line' | 'rectangle' | 'circle' | 'erase' | 'clear';
-  points?: Point[];
-  startPoint?: Point;
-  endPoint?: Point;
-  color: string;
-  lineWidth: number;
-}
 
 export default function Canvas() {
   const { roomId } = useParams();
